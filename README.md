@@ -22,7 +22,8 @@ Browse to https://HOSTNAME:9443/ for setup.
 
 ## ntopng
 
-https://hub.docker.com/r/ntop/ntopng
+https://hub.docker.com/r/ntop/ntopng \
+https://github.com/ntop/ntopng
 
 ```
 sudo mkdir -m 777 -p /var/lib/ntopng
