@@ -26,6 +26,7 @@ https://hub.docker.com/r/ntop/ntopng
 
 ```
 sudo mkdir -m 777 -p /var/lib/ntopng
+sudo mkdir -m 777 -p /var/lib/redis
 ```
 
 [docker\_compose.yml](docker-compose.yml)

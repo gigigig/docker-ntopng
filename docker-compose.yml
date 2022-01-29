@@ -13,4 +13,5 @@ services:
       TZ: "America/Chicago"
     volumes:
       - '/var/lib/ntopng:/var/lib/ntopng'
+      - '/var/lib/redis:/var/lib/redis'
     command: ["-i", "eno1", "-m", "192.168.0.0/16=DDWRT,172.17.0.0/16=DOCKER1,172.23.0.0/16=DOCKER2", "--community"]
