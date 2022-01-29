@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ntopng:
+    container_name: ntopng
+    image: ntop/ntopng
+    network_mode: host
+    hostname: toast
+    ports:
+      - '2055:2055/udp'
+      - '3000:3000/tcp'
+      - '3001:3001/tcp'
+    environment:
+      TZ: "America/Chicago"
+    volumes:
+      - '/var/lib/ntopng:/var/lib/ntopng'
+    command: ["-i", "eno1", "-m", "192.168.0.0/16=DDWRT,172.17.0.0/16=DOCKER1,172.23.0.0/16=DOCKER2", "--community"]
