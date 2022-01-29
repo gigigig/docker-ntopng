@@ -9,7 +9,6 @@ services:
     ports:
       - '2055:2055/udp'
       - '3000:3000/tcp'
-      - '3001:3001/tcp'
     environment:
       TZ: "America/Chicago"
     volumes:

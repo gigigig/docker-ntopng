@@ -30,4 +30,4 @@ sudo mkdir -m 777 -p /var/lib/ntopng
 
 [docker\_compose.yml](docker-compose.yml)
 
-Browse to https://HOSTNAME:3001/web for setup.
+Browse to http://HOSTNAME:3000 for setup.
