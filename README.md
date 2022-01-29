@@ -28,6 +28,6 @@ https://hub.docker.com/r/ntop/ntopng
 sudo mkdir -m 777 -p /var/lib/ntopng
 ```
 
-[ntopng\_compose.yml](docker-compose.yml)
+[docker\_compose.yml](docker-compose.yml)
 
 Browse to https://HOSTNAME:3001/web for setup.
